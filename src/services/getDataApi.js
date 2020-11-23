@@ -1,9 +1,9 @@
 const getDataApi = () => {
-  return fetch("https://rickandmortyapi.com/api/character/")
-    .then((response) => response.json())
-    .then((data) => {
-      return data;
-    });
+  return fetch(
+    "https://raw.githubusercontent.com/Adalab/rick-y-morty/master/data/rick-y-morty.json"
+  ).then((response) => {
+    return response.json();
+  });
 };
 
 export default getDataApi;

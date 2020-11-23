@@ -1,21 +1,36 @@
 import React, { useState, useEffect } from "react";
 import CharacterList from "./CharacterList";
+import Filters from "./Filters";
+import "../stylesheets/App.scss";
 import getDataApi from "../services/getDataApi";
 
-const App = () => {
+function App() {
   const [characters, setCharacters] = useState([]);
-  useEffect(() => {
+  const [searchValue, setSearchValue] = useState("");
+
+  const dataApi = () => {
     getDataApi().then((data) => {
-      setCharacters(data);
+      setCharacters(data.results);
     });
+  };
+  const handleInputChange = (inputValue) => {
+    setSearchValue(inputValue);
+  };
+
+  useEffect(() => {
+    dataApi();
   }, []);
   return (
     <>
-      <div>
-        <CharacterList className="character-list" characters={characters} />
-      </div>
+      <main>
+        <Filters
+          searchValue={searchValue}
+          handleInputChange={handleInputChange}
+        />
+        <CharacterList searchValue={searchValue} characters={characters} />
+      </main>
     </>
   );
-};
+}
 
 export default App;
