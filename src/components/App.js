@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Header from "./Header";
 import CharacterList from "./CharacterList";
 import Filters from "./Filters";
 import "../stylesheets/App.scss";
@@ -22,13 +23,18 @@ function App() {
   }, []);
   return (
     <>
-      <main>
-        <Filters
-          searchValue={searchValue}
-          handleInputChange={handleInputChange}
-        />
-        <CharacterList searchValue={searchValue} characters={characters} />
-      </main>
+      <body className="body">
+        <div className="container">
+          <Header></Header>
+          <main>
+            <Filters
+              searchValue={searchValue}
+              handleInputChange={handleInputChange}
+            />
+            <CharacterList searchValue={searchValue} characters={characters} />
+          </main>
+        </div>
+      </body>
     </>
   );
 }

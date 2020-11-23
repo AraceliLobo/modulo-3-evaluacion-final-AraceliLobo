@@ -7,9 +7,10 @@ const Filters = (props) => {
   };
 
   return (
-    <form>
+    <form className="search">
       <label htmlFor="search">Search a character</label>
       <input
+        className="search-input"
         placeholder="Morty Smith"
         onChange={handleInputChange}
         id="search"

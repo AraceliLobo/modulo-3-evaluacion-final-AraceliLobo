@@ -1,2 +1,40 @@
+@import "layouts/Header";
 @import "layouts/CharacterList";
 @import "layouts/CharacterCard";
+
+.body {
+  box-sizing: border-box;
+  background-image: url(../images/stars2.gif);
+  background-color: rgb(3, 1, 14);
+  cursor: url("../images/cursor.png"), auto;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Goldman", cursive;
+  font-size: 18px;
+  color: rgb(87, 250, 11);
+  filter: drop-shadow(0 0 5px rgb(85, 248, 85));
+  margin-top: -110px;
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+  }
+}
+.search-input {
+  height: 30px;
+  width: 240px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  @media all and (min-width: 1200px) {
+    margin-left: 10px;
+    height: 30px;
+    width: 240px;
+  }
+}
