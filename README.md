@@ -1,6 +1,6 @@
 # Rick & Morty Character Finder
 
-![](images/gifreadme.gif)
+[](https://static.lootcrate.com/yrk2x9n6p9s5/7qe1Eupm4acN9PffLD5WLw/3586f3356d4526cfd964b8dfed7f9887/slide-1-OptA.gif| width=456)
 
 ## El ejercicio
 
@@ -22,7 +22,7 @@ Para cada personje hemos pintado:
 Ahora buscaremos los personajes por nombre, para eso, hemos añadimos un <input> a la interfaz, de forma que al ir escribiendo un nombre queden en la interfaz solo los personajes cuyo nombre contiene las letras escritas. En el
 pantallazo de arriba.
 
-### Parte 3: 3 Componentes del listado de personajes
+### Parte 3: Componentes del listado de personajes
 
 El listado debe tiene los siguientes componentes:
 •Componente para los filtros: Filters
@@ -34,4 +34,4 @@ El listado debe tiene los siguientes componentes:
 
 La maquetación ha sido realizado con SASS /CSS.
 
-¡ENCUENTRA A TU PERSONAJE FAVORITO! ![](images/rickreadme.gif)
+¡ENCUENTRA A TU PERSONAJE FAVORITO! !![](https://i.pinimg.com/originals/04/68/7e/04687eeebbbbd3979150f96244953a6e.gif | width=320)
