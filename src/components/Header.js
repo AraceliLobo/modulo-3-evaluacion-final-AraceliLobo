@@ -1,7 +1,7 @@
 import portal from "../images/portal.gif";
 import rickmorty from "../images/rickmorty.png";
 import title from "../images/title.png";
-import "../stylesheets/layouts/Header.scss";
+// import "../stylesheets/layouts/Header.scss";
 
 const Header = () => {
   return (

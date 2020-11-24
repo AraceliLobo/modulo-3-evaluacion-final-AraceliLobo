@@ -24,16 +24,14 @@ function App() {
   return (
     <>
       <body className="body">
-        <div className="container">
-          <Header></Header>
-          <main>
-            <Filters
-              searchValue={searchValue}
-              handleInputChange={handleInputChange}
-            />
-            <CharacterList searchValue={searchValue} characters={characters} />
-          </main>
-        </div>
+        <Header></Header>
+        <main>
+          <Filters
+            searchValue={searchValue}
+            handleInputChange={handleInputChange}
+          />
+          <CharacterList searchValue={searchValue} characters={characters} />
+        </main>
       </body>
     </>
   );

@@ -5,6 +5,13 @@
   margin: 20px 20px 20px 20px;
   border-radius: 15px;
   text-align: center;
+  cursor: url("../../images/pointer.png"), auto;
+  filter: drop-shadow(0 0 4px rgb(94, 255, 0));
+  transition: filter 1s;
+  filter: drop-shadow();
+  &:hover {
+    filter: drop-shadow(0 0 18px rgb(135, 252, 57));
+  }
 }
 .character-img {
   width: 180px;
