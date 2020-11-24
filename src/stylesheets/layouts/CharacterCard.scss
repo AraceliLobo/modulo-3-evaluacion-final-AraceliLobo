@@ -1,3 +1,6 @@
+.link-detail {
+  text-decoration: none;
+}
 .character-container {
   width: 200px;
   height: 300px;
@@ -14,6 +17,19 @@
   }
 }
 .character-img {
+  margin-top: 10px;
   width: 180px;
   border-radius: 95px;
+  border: solid 2px rgb(135, 252, 57);
+}
+.character-name {
+  font-family: "Goldman", cursive;
+  font-size: 20px;
+  color: rgb(50, 51, 49);
+}
+.character-species {
+  margin-top: -10px;
+  font-family: "Goldman", cursive;
+  font-size: 17px;
+  color: rgb(64, 247, 40);
 }

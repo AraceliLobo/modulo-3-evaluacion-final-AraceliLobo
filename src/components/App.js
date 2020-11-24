@@ -8,12 +8,13 @@ import getDataApi from "../services/getDataApi";
 function App() {
   const [characters, setCharacters] = useState([]);
   const [searchValue, setSearchValue] = useState("");
-
+  //Api
   const dataApi = () => {
     getDataApi().then((data) => {
       setCharacters(data.results);
     });
   };
+  //Events
   const handleInputChange = (inputValue) => {
     setSearchValue(inputValue);
   };
@@ -23,16 +24,14 @@ function App() {
   }, []);
   return (
     <>
-      <body className="body">
-        <Header></Header>
-        <main>
-          <Filters
-            searchValue={searchValue}
-            handleInputChange={handleInputChange}
-          />
-          <CharacterList searchValue={searchValue} characters={characters} />
-        </main>
-      </body>
+      <Header></Header>
+      <main>
+        <Filters
+          searchValue={searchValue}
+          handleInputChange={handleInputChange}
+        />
+        <CharacterList searchValue={searchValue} characters={characters} />
+      </main>
     </>
   );
 }

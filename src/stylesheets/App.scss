@@ -2,8 +2,9 @@
 @import "layouts/CharacterList";
 @import "layouts/CharacterCard";
 
-.body {
+body {
   box-sizing: border-box;
+  margin: 0;
   background-image: url(../images/stars2.gif);
   background-color: rgb(1, 1, 14);
   cursor: url("../images/cursor.png"), auto;
