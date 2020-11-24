@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
-import Notfound from "./NotFound";
+import NotFound from "./NotFound";
 import Filters from "./Filters";
 import "../stylesheets/App.scss";
 import { Route, Switch } from "react-router-dom";
@@ -43,9 +43,8 @@ function App() {
           status={foundCharacter.status}
         />
       );
-    } else {
-      return <Notfound />;
     }
+    return <NotFound />;
   };
   return (
     <>
