@@ -1,42 +1,40 @@
 import React from "react";
-import NotFound from "./NotFound";
 import { Link } from "react-router-dom";
+import "../stylesheets/layouts/CharacterDetail.scss";
 // import "../stylesheets/_CharacterDetail.scss";
 // // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // // import { faHeartbeat } from "@fortawesome/free-solid-svg-icons";
 // // import { faSkullCrossbones} from "@fortawesome/free-solid-svg-icons";
 
 const CharacterDetail = (props) => {
-  if (props.character === undefined) {
-    return (
-      <>
-        <Link to="/" className="linkDetail">
-          <p>Go back</p>
-        </Link>
-        <NotFound />
-      </>
-    );
-  } else
-    return (
-      <>
-        <Link to="/" className="linkdetail">
-          <p>Go back</p>
-        </Link>
-        <article className="detail">
-          <img
-            className="detail-image"
-            src={props.character.img}
-            alt={props.character.name}
-          />
-          <div className="detail-container">
-            <h2 className="detail-name">{props.character.name}</h2>
-            <h3 className="detail-species">{props.character.species}</h3>
-            <h3 className="detail-origin">{props.character.origin}</h3>
-            <h3 className="detail-status">{props.character.status}</h3>
-          </div>
-        </article>
-      </>
-    );
+  return (
+    <div className="container-detail">
+      <Link className="goback-link" to="/">
+        <button className="back-btn">Go back</button>
+      </Link>
+      <article className="detail-character">
+        <img className="image-detail" src={props.image} alt={props.name} />
+        <h2 className="name-detail">{props.name}</h2>
+        <ul className="detail-list">
+          <li className="species li">
+            Species: <span className="info">{props.species}</span>
+          </li>
+          <li className="origin li">
+            Planet of origin: <span className="info">{props.origin}</span>
+          </li>
+          <li className="episodes li">
+            Appears in:{" "}
+            <span className="info">
+              {props.episodes.length}
+              episodes
+            </span>
+          </li>
+          <li className="status li">
+            Status: <span className="info">{props.status}</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+  );
 };
-
 export default CharacterDetail;
