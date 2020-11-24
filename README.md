@@ -1,6 +1,6 @@
 # Rick & Morty Character Finder
 
-[](https://github.com/Adalab/modulo-3-evaluacion-final-AraceliLobo/blob/master/src/images/gifreadme.gif)
+!![](https://github.com/Adalab/modulo-3-evaluacion-final-AraceliLobo/blob/master/src/images/gifreadme.gif)
 
 ## El ejercicio
 
@@ -34,4 +34,4 @@ El listado debe tiene los siguientes componentes:
 
 La maquetación ha sido realizado con SASS /CSS.
 
-¡ENCUENTRA A TU PERSONAJE FAVORITO! !![](https://github.com/Adalab/modulo-3-evaluacion-final-AraceliLobo/blob/master/src/images/rickreadme.gif)
+¡ENCUENTRA A TU PERSONAJE FAVORITO! ![](https://github.com/Adalab/modulo-3-evaluacion-final-AraceliLobo/blob/master/src/images/rickreadme.gif)
