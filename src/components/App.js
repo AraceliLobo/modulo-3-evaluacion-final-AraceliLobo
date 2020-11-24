@@ -23,16 +23,14 @@ function App() {
   }, []);
   return (
     <>
-      <body className="body">
-        <Header></Header>
-        <main>
-          <Filters
-            searchValue={searchValue}
-            handleInputChange={handleInputChange}
-          />
-          <CharacterList searchValue={searchValue} characters={characters} />
-        </main>
-      </body>
+      <Header></Header>
+      <main>
+        <Filters
+          searchValue={searchValue}
+          handleInputChange={handleInputChange}
+        />
+        <CharacterList searchValue={searchValue} characters={characters} />
+      </main>
     </>
   );
 }
