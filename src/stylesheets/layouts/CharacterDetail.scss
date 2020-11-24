@@ -1,9 +1,85 @@
-.detail-container {
-  width: 200px;
-  height: 300px;
-  background-color: rgb(255, 255, 255);
-  margin: 20px 20px 20px 20px;
-  border-radius: 15px;
-  text-align: center;
+.container-detail {
+  margin-top: -150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.goback-link {
+  font-size: 20px;
+  line-height: 45px;
+  text-decoration: none;
+}
+.back-btn {
+  width: 95px;
+  height: 55px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(100, 248, 15);
+  border-radius: 45px;
+  background-color: white;
+  font-family: "Goldman", cursive;
+  outline: none;
   cursor: url("../../images/pointer.png"), auto;
-  filter: drop-shadow(0 0 4px rgb(94, 255, 0));
+  @media all and (min-width: 1200px) {
+    margin-top: 30px;
+  }
+}
+.detail-character {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 45px;
+  border: solid 3px white;
+  background-color: rgb(100, 248, 15);
+  @media all and (min-width: 1200px) {
+    width: 500px;
+  }
+}
+
+.image-detail {
+  width: 150px;
+  margin-top: 20px;
+  border-radius: 200px;
+  border: solid 2px rgb(255, 255, 255);
+  @media all and (min-width: 1200px) {
+    width: 300px;
+  }
+}
+.name-detail {
+  font-family: "Goldman", cursive;
+  font-size: 25px;
+  color: white;
+  @media all and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+.detail-list {
+  list-style: none;
+}
+.li {
+  font-family: "Goldman", cursive;
+  font-size: 12px;
+  font-weight: 700px;
+  color: white;
+  @media all and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+.info {
+  font-weight: 100px;
+  color: rgb(49, 48, 48);
+}
+.species {
+  margin-top: -30px;
+}
+.status {
+  margin-bottom: 20px;
+}

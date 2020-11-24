@@ -1,0 +1,23 @@
+.goback-link {
+  font-size: 20px;
+  line-height: 45px;
+  text-decoration: none;
+}
+.back-btn {
+  width: 95px;
+  height: 55px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(100, 248, 15);
+  border-radius: 45px;
+  background-color: white;
+  font-family: "Goldman", cursive;
+  outline: none;
+  cursor: url("../../images/pointer.png"), auto;
+  @media all and (min-width: 1200px) {
+    margin-top: 30px;
+  }
+}
