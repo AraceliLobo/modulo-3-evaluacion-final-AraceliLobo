@@ -1,14 +1,15 @@
 import React from "react";
 import notFound from "../images/notfound.png";
+import "../stylesheets/layouts/NotFound.scss";
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <div className="character__notfound">
-      <Link className="goback-link" to="/">
-        <button className="back-btn">Go back</button>
+    <div className="character-notfound">
+      <Link className="nfgoback-link" to="/">
+        <button className="nfback-btn">Go back</button>
       </Link>
-      <img src={notFound} alt="Not found" />
+      <img className="notfound-image" src={notFound} alt="Not found" />
     </div>
   );
 };

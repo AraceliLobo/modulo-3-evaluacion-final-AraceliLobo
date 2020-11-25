@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import CharacterCard from "./CharacterCard";
+import NotExist from "./NotExist";
 
 const CharacterList = (props) => {
   const charactersItems = props.characters
@@ -19,9 +20,13 @@ const CharacterList = (props) => {
         </li>
       );
     });
-
-  return <ul className="character-list">{charactersItems}</ul>;
+  if (charactersItems.length !== 0) {
+    return <ul className="character-list">{charactersItems}</ul>;
+  } else {
+    return <NotExist />;
+  }
 };
+
 CharacterList.propTypes = {
   characters: PropTypes.array,
   searchValue: PropTypes.string,

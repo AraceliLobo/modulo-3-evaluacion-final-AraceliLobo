@@ -6,6 +6,7 @@ import { faHeartbeat } from "@fortawesome/free-solid-svg-icons";
 import { faSkullCrossbones } from "@fortawesome/free-solid-svg-icons";
 import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { faOctopusDeploy } from "@fortawesome/free-brands-svg-icons";
+import { faQuestion } from "@fortawesome/free-solid-svg-icons";
 
 const CharacterDetail = (props) => {
   const status =
@@ -13,6 +14,8 @@ const CharacterDetail = (props) => {
       <FontAwesomeIcon icon={faSkullCrossbones} />
     ) : props.status === "Alive" ? (
       <FontAwesomeIcon icon={faHeartbeat} />
+    ) : props.status === "unknown" ? (
+      <FontAwesomeIcon icon={faQuestion} />
     ) : (
       props.status
     );
