@@ -20,7 +20,7 @@ body {
   color: rgb(87, 250, 11);
   filter: drop-shadow(0 0 5px rgb(85, 248, 85));
   margin-top: -110px;
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     font-size: 24px;
@@ -33,7 +33,7 @@ body {
   border: none;
   border-radius: 15px;
   outline: none;
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 768px) {
     margin-left: 10px;
     height: 30px;
     width: 240px;

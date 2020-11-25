@@ -4,3 +4,9 @@
   justify-content: center;
   align-items: center;
 }
+.notexist-image {
+  width: 500px;
+  @media all and (min-width: 768px) {
+    width: 800px;
+  }
+}

@@ -26,10 +26,14 @@
   font-family: "Goldman", cursive;
   outline: none;
   cursor: url("../../images/pointer.png"), auto;
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 768px) {
     margin-top: 25px;
   }
 }
 .notfound-image {
-  margin-top: -50px;
+  width: 500px;
+  @media all and (min-width: 768px) {
+    width: 800px;
+    margin-top: -50px;
+  }
 }

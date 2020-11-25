@@ -5,7 +5,7 @@ import "../stylesheets/layouts/NotExist.scss";
 const NotExist = () => {
   return (
     <div className="character-notexist">
-      <img className="notfound-image" src={notExist} alt="Not found" />
+      <img className="notexist-image" src={notExist} alt="Not found" />
     </div>
   );
 };

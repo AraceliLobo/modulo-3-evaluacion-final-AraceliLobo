@@ -9,7 +9,7 @@
   margin-top: 12px;
   width: 250px;
   filter: drop-shadow(0 0 7px rgb(89, 216, 233));
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 768px) {
     width: 450px;
     filter: drop-shadow(0 0 15px rgb(89, 216, 233));
   }
@@ -18,7 +18,7 @@
 .header-portal {
   width: 110px;
   filter: drop-shadow(0 0 10px rgb(118, 233, 89));
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 768px) {
     width: 180px;
   }
 }
@@ -27,7 +27,7 @@
   transform: translateY(-120px);
   margin-left: -20px;
   filter: drop-shadow(0 0 8px rgb(222, 241, 186));
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 768px) {
     width: 110px;
     transform: translateY(-165px);
   }
