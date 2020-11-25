@@ -5,6 +5,7 @@ import CharacterDetail from "./CharacterDetail";
 import Loading from "./Loading";
 import NotFound from "./NotFound";
 import Filters from "./Filters";
+import Footer from "./Footer";
 import "../stylesheets/App.scss";
 import { Route, Switch } from "react-router-dom";
 import getDataApi from "../services/getDataApi";
@@ -68,6 +69,7 @@ function App() {
           <Route path="/character-detail/:id" render={renderCharacterDetail} />
         </Switch>
       </main>
+      <Footer />
     </>
   );
 }
