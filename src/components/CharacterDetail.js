@@ -7,6 +7,7 @@ import { faSkullCrossbones } from "@fortawesome/free-solid-svg-icons";
 import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { faOctopusDeploy } from "@fortawesome/free-brands-svg-icons";
 import { faQuestion } from "@fortawesome/free-solid-svg-icons";
+// He tenido que instalar con npm la biblioteca de iconos específica para React de Font Awesome para pintar los iconos.
 
 const CharacterDetail = (props) => {
   const status =

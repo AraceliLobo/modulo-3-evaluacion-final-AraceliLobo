@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
-// import { faOctopusDeploy } from "@fortawesome/free-solid-svg-icons";
-
 const CharacterCard = (props) => {
   return (
     <>

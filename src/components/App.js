@@ -26,11 +26,11 @@ function App() {
     dataApi();
   }, []);
 
-  // Events
+  // Evento
   const handleInputChange = (inputValue) => {
     setSearchValue(inputValue);
   };
-  // Link character detail
+  // Link al detalle del personaje
   const renderCharacterDetail = (props) => {
     const routeCharacterId = parseInt(props.match.params.id);
     const foundCharacter = characters.find((character) => {
@@ -51,6 +51,7 @@ function App() {
     }
     return <NotFound />;
   };
+  //Mostrar gif de loading cuando la página está cargando
   return (
     <>
       {isLoading === true ? <Loading /> : null}
