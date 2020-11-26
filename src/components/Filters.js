@@ -5,6 +5,10 @@ const Filters = (props) => {
     const inputValue = ev.currentTarget.value;
     props.handleInputChange(inputValue);
   };
+  const handleChangeLocation = (ev) => {
+    const locationValue = ev.currentTarget.value;
+    props.handleChangeLocation(locationValue);
+  };
 
   return (
     <form className="search">
@@ -18,6 +22,15 @@ const Filters = (props) => {
         type="text"
         value={props.searchValue}
       />
+      <input
+        className="location-input"
+        placeholder="Earth"
+        onChange={handleChangeLocation}
+        id="location"
+        name="location"
+        type="text"
+        value={props.searchLocation}
+      />
     </form>
   );
 };
@@ -25,6 +38,8 @@ const Filters = (props) => {
 Filters.propTypes = {
   searchValue: PropTypes.string,
   handleInputChange: PropTypes.func,
+  searchLocation: PropTypes.string,
+  handleChangeLocation: PropTypes.func,
 };
 
 export default Filters;

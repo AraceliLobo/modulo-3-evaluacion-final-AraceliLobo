@@ -14,6 +14,7 @@ function App() {
   const [characters, setCharacters] = useState([]);
   const [searchValue, setSearchValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [searchLocation, setSearchLocation] = useState("");
 
   // Api
   const dataApi = () => {
@@ -31,6 +32,10 @@ function App() {
   const handleInputChange = (inputValue) => {
     setSearchValue(inputValue);
   };
+  const handleChangeLocation = (locationValue) => {
+    console.log(searchLocation);
+    setSearchLocation(locationValue);
+  };
   // Link al detalle del personaje
   const renderCharacterDetail = (props) => {
     const routeCharacterId = parseInt(props.match.params.id);
@@ -47,6 +52,7 @@ function App() {
           origin={foundCharacter.origin.name}
           episodes={foundCharacter.episode}
           status={foundCharacter.status}
+          location={foundCharacter.location.name}
         />
       );
     }
@@ -63,8 +69,14 @@ function App() {
             <Filters
               searchValue={searchValue}
               handleInputChange={handleInputChange}
+              searchLocation={searchLocation}
+              handleChangeLocation={handleChangeLocation}
             />
-            <CharacterList searchValue={searchValue} characters={characters} />
+            <CharacterList
+              searchValue={searchValue}
+              searchLocation={searchLocation}
+              characters={characters}
+            />
           </Route>
           <Route path="/character-detail/:id" render={renderCharacterDetail} />
         </Switch>

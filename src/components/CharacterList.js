@@ -4,12 +4,16 @@ import CharacterCard from "./CharacterCard";
 import NotExist from "./NotExist";
 
 const CharacterList = (props) => {
+  // console.log(props.characters.location.name);
   const charactersItems = props.characters
     .filter((character) =>
-      // Filtrar independientemente de si es mayúscula o minúscula
       character.name.toUpperCase().includes(props.searchValue.toUpperCase())
     )
-    // Filtras nombres por orden alfabético
+    .filter((character) =>
+      character.location.name
+        .toUpperCase()
+        .includes(props.searchLocation.toUpperCase())
+    )
     .sort((aName, bName) => {
       if (aName.name < bName.name) {
         return -1;
@@ -25,6 +29,7 @@ const CharacterList = (props) => {
             image={character.image}
             name={character.name}
             species={character.species}
+            location={character.location.name}
             id={character.id}
           />
         </li>
@@ -41,6 +46,7 @@ const CharacterList = (props) => {
 CharacterList.propTypes = {
   characters: PropTypes.array,
   searchValue: PropTypes.string,
+  searchLocation: PropTypes.string,
 };
 
 export default CharacterList;

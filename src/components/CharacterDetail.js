@@ -53,6 +53,9 @@ const CharacterDetail = (props) => {
           <li className="status li">
             Status: <span className="info">{status}</span>
           </li>
+          <li className="location li">
+            Location: <span className="info">{props.location}</span>
+          </li>
         </ul>
       </article>
     </div>
